@@ -1,0 +1,77 @@
+site_name: Tekla PowerFab Training
+site_description: Trimble Tekla PowerFab 5-day training programme and implementation workflow
+site_url: https://taufiktrimble.github.io/powerfab-training/
+copyright: © 2026 Trimble Solutions
+
+theme:
+  name: material
+  font:
+    text: Open Sans
+    code: Roboto Mono
+  palette:
+    - scheme: default
+      primary: blue
+      accent: amber
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - assets/trimble-theme.css
+
+plugins:
+  - search
+  - glightbox
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Overview:
+      - index.md
+      - Course Structure: course-structure.md
+  - Day 1:
+      - day-1/index.md
+      - Morning Session: day-1/morning.md
+      - Afternoon Session: day-1/afternoon.md
+  - Day 2:
+      - day-2/index.md
+      - Morning Session: day-2/morning.md
+      - Afternoon Session: day-2/afternoon.md
+  - Day 3:
+      - day-3/index.md
+      - Morning Session: day-3/morning.md
+      - Afternoon Session: day-3/afternoon.md
+  - Day 4:
+      - day-4/index.md
+      - Morning Session: day-4/morning.md
+      - Afternoon Session: day-4/afternoon.md
+  - Day 5:
+      - day-5/index.md
+      - Morning Session: day-5/morning.md
+      - Afternoon Session: day-5/afternoon.md
+  - Implementation:
+      - implementation/index.md
+      - Part 1 - Steps 1 thru 10: implementation/part-1.md
+      - Part 2 - Steps 11 thru 18: implementation/part-2.md
+  - Resources:
+      - resources/glossary.md
+      - Trainer Checklist: resources/trainer-checklist.md
+      - Contact Support: resources/contact.md

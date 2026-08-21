@@ -1,0 +1,99 @@
+/* Trimble Brand tokens applied to Material for MkDocs "custom" palette */
+:root, [data-md-color-scheme] {
+  /* Primary = Trimble Blue */
+  --md-primary-fg-color:             #0063A3;
+  --md-primary-fg-color--light:      #368FC7;
+  --md-primary-fg-color--dark:       #003054;
+  --md-primary-bg-color:             #FFFFFF;
+  --md-primary-bg-color--light:      #FFFFFF;
+
+  /* Accent = Amber */
+  --md-accent-fg-color:              #FBAD26;
+  --md-accent-fg-color--transparent: #FBAD261A;
+  --md-accent-bg-color:              #252A2E;
+
+  /* Typography */
+  --md-default-fg-color:             #252A2E;
+  --md-default-fg-color--light:      #464B52;
+  --md-default-fg-color--lighter:    #6A6E79;
+  --md-default-fg-color--lightest:   #90939F;
+  --md-default-bg-color:             #FFFFFF;
+  --md-typeset-a-color:              #0063A3;
+
+  /* Code blocks */
+  --md-code-bg-color:                #F5F6F8;
+  --md-code-fg-color:                #252A2E;
+}
+
+body, .md-typeset {
+  font-family: 'Open Sans', 'Segoe UI', system-ui, Arial, sans-serif;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
+  font-weight: 700;
+  color: #252A2E;
+}
+
+/* Bullets: round, never decorative */
+.md-typeset ul li::marker {
+  color: #0063A3;
+}
+
+/* Admonition semantic colours per Trimble spec */
+.md-typeset .admonition.note,
+.md-typeset .admonition.info {
+  border-color: #0063A3;
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .info > .admonition-title {
+  background-color: #0063A31A;
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .info > .admonition-title::before {
+  background-color: #0063A3;
+}
+
+.md-typeset .admonition.tip {
+  border-color: #349C44;
+}
+.md-typeset .tip > .admonition-title {
+  background-color: #349C441A;
+}
+.md-typeset .tip > .admonition-title::before {
+  background-color: #349C44;
+}
+
+.md-typeset .admonition.warning {
+  border-color: #FBAD26;
+}
+.md-typeset .warning > .admonition-title {
+  background-color: #FBAD261A;
+}
+.md-typeset .warning > .admonition-title::before {
+  background-color: #FBAD26;
+}
+
+.md-typeset .admonition.danger {
+  border-color: #DA212C;
+}
+.md-typeset .danger > .admonition-title {
+  background-color: #DA212C1A;
+}
+.md-typeset .danger > .admonition-title::before {
+  background-color: #DA212C;
+}
+
+/* TOC + nav accent */
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: #0063A3;
+}
+
+/* Header */
+.md-header {
+  background-color: #0063A3;
+}
