@@ -1,55 +1,59 @@
 # Implementation Workflow
 
-This exercise moves one job through the full Tekla PowerFab workflow. It has 18 steps. The steps start at a 3D model and end at a shipping ticket.
+This exercise takes a single job through the complete Tekla PowerFab workflow in eighteen steps — starting with an empty project shell and a 3D model, and ending with steel on a truck and a Bill of Lading in the driver's hand.
 
-Use the practice job **TRN-001** for this exercise.
+Use practice job **TRN-001** throughout.
 
-## Why this exercise
+## Why this exercise exists
 
-The five training days teach one module at a time. This exercise joins the modules together. The trainee sees how one action in Tekla Structures changes the shop floor two weeks later.
+The five-day course teaches one module at a time, which is the only practical way to deliver it. The cost of that approach is that participants can finish the week competent in each module and still not see how they connect.
 
-!!! info "Before you start"
-    Get access to Tekla Structures, Tekla PowerFab Office and Tekla PowerFab Go. Use the SEA regional database.
+This exercise fixes that. Working through it once shows exactly how a decision made in Tekla Structures on day one shows up on the shop floor two weeks later — and why the sequencing rules that seem arbitrary in the classroom are not arbitrary at all.
+
+!!! info "Prerequisites"
+    Access to **Tekla Structures**, **Tekla PowerFab Office**, and **Tekla PowerFab Go**, running against the SEA regional database. Allow roughly a full day to complete both parts unhurried.
 
 ## The two parts
 
-| Part | Steps | Focus |
+| Part | Steps | Covers |
 |---|---|---|
-| [Part 1](part-1.md) | 1 thru 10 | Project setup, advance purchasing and detailing |
-| [Part 2](part-2.md) | 11 thru 18 | Balance material, fabrication and shipping |
+| [Part 1](part-1.md) | 1 – 10 | Project setup, early procurement, detailing, and handover to Production Control |
+| [Part 2](part-2.md) | 11 – 18 | Balance material, fabrication, quality, and shipping |
 
-## The roles in this exercise
+## Roles involved
+
+The workflow deliberately passes between roles. In a real fabrication business these are different people, often in different buildings.
 
 | Role | Steps |
 |---|---|
-| Project Manager | 1 and 2 |
-| Steel Detailer | 3, 7, 8 and 9 |
-| Estimator and Purchasing Agent | 4, 5, 6, 11 and 12 |
-| Production Manager | 10 and 14 |
-| Yard Foreman | 13 |
-| Shop Foreman and Machine Operator | 15 and 16 |
+| Project Manager | 1, 2 |
+| Steel Detailer | 3, 7, 8, 9 |
+| Estimator / Purchasing Agent | 4, 5, 6, 11, 12 |
+| Production Manager | 10, 14 |
+| Yard Foreman / Receiving Clerk | 13 |
+| Shop Foreman / Machine Operator | 15, 16 |
 | Shop Floor Workers | 17 |
 | Shipping Manager | 18 |
 
-## The full step list
+## Step index
 
-| Step | Task |
-|---|---|
-| 1 | Make a Project Management job |
-| 2 | Make a project schedule |
-| 3 | Model in Tekla Structures and export an IFC file |
-| 4 | Import the IFC file into the advance bill |
-| 5 | Combine part of the advance bill material |
-| 6 | Send the material to a requisition and a purchase order |
-| 7 | Complete the connections in Tekla Structures |
-| 8 | Make the drawings and export the NC files |
-| 9 | Export a PFXT file to Tekla PowerFab |
-| 10 | Import the PFXT file into Production Control |
-| 11 | Combine the balance material in Production Control |
-| 12 | Send the balance material to a requisition and a purchase order |
-| 13 | Receive the material |
-| 14 | Global edit and apply a route |
-| 15 | Make a cutlist |
-| 16 | Process the cutlist |
-| 17 | Update the production tracking |
-| 18 | Make a load and ship it |
+| Step | Task | Software |
+|---|---|---|
+| 1 | Create a Project Management job | PowerFab Office |
+| 2 | Create a project schedule | PowerFab Office |
+| 3 | Model without connections and export IFC | Tekla Structures |
+| 4 | Import IFC into the Advance Bill | PowerFab Office |
+| 5 | Partially combine advance bill material | PowerFab Office |
+| 6 | Send to requisition and raise a purchase order | PowerFab Office |
+| 7 | Complete connections in the model | Tekla Structures |
+| 8 | Create drawings and export NC files | Tekla Structures |
+| 9 | Export to PowerFab as `.pfxt` | Tekla Structures |
+| 10 | Import `.pfxt` into Production Control | PowerFab Office |
+| 11 | Combine the balance material | PowerFab Office |
+| 12 | Send balance material to requisition and PO | PowerFab Office |
+| 13 | Receive material | Office + Go |
+| 14 | Global edit and apply routes | PowerFab Office |
+| 15 | Create a cut list | PowerFab Office |
+| 16 | Process the cut list | PowerFab Go |
+| 17 | Update production tracking | PowerFab Go |
+| 18 | Create a load and ship | Office + Go |

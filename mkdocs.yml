@@ -69,8 +69,8 @@ nav:
       - Afternoon Session: day-5/afternoon.md
   - Implementation:
       - implementation/index.md
-      - Part 1 - Steps 1 thru 10: implementation/part-1.md
-      - Part 2 - Steps 11 thru 18: implementation/part-2.md
+      - Part 1 — Steps 1 to 10: implementation/part-1.md
+      - Part 2 — Steps 11 to 18: implementation/part-2.md
   - Resources:
       - resources/glossary.md
       - Trainer Checklist: resources/trainer-checklist.md

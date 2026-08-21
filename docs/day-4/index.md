@@ -1,27 +1,29 @@
 # Day 4 — Shop Floor Fabrication
 
-Day 4 connects the office and the shop floor. It is the day with the most Tekla PowerFab Go content.
+Day 4 crosses the bridge between the office and the shop. It is the day with the heaviest **Tekla PowerFab Go** content, and the day where participants finally see office configuration turn into real-time production data.
 
-**Manual chapter:** 7
+- **Manual chapter** — 7
+- **Modules** — Production Control, Inspection, Load Tracking, Tekla PowerFab Go
+- **Primary audience** — Production managers, shop foremen, QC inspectors, shipping coordinators
 
-## Objectives
+## Learning outcomes
 
-After Day 4, the trainees can do these tasks:
+By the end of Day 4, participants will be able to:
 
-- Make a cutlist and set the priority.
-- Process a cut in Tekla PowerFab Go and record the drop.
-- Release a work package to the shop floor.
-- Track a piece through the stations in a route.
-- Do a test in the **Inspection** module and attach a photo.
-- Make a load and print a shipping ticket.
-- Import a revision and accept or prevent each change.
+- Create, prioritise, and report on cut lists
+- Process cuts in PowerFab Go and return drops to inventory correctly
+- Release and hold work packages
+- Track pieces through stations from both the desktop and a tablet
+- Run inspections, fail a piece with photographic evidence, and clear it with a follow-up test
+- Build loads, generate shipping tickets, and plan deliveries on the shipping calendar
+- Import a model revision and decide what to accept, prevent, or defer
 
 ## Sessions
 
-| Session | Topic | Chapters |
+| Session | Focus | Chapters |
 |---|---|---|
-| [Morning](morning.md) | Cut lists, work packages and piece tracking | 7.0 thru 7.3 |
-| [Afternoon](afternoon.md) | Quality control, shipping and change management | 7.4 thru 7.6 |
+| [Morning](morning.md) | Cut lists, work packages, and piece tracking | 7.0 – 7.3 |
+| [Afternoon](afternoon.md) | Quality control, shipping, and change management | 7.4 – 7.6 |
 
-!!! tip
-    Give each trainee a tablet or a second browser window for Day 4. The trainees must see the office screen and the Tekla PowerFab Go screen at the same time.
+!!! tip "Set up two screens per participant"
+    Day 4 constantly moves between PowerFab Office and PowerFab Go. Give each participant a tablet, or a second browser window on a second monitor, so they can watch a desktop screen update the instant a tablet action is taken. Seeing that live connection is the whole point of the day.

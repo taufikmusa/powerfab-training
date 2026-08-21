@@ -1,26 +1,33 @@
-# Contact Support
+# Contact & Support
 
-## Trimble Solutions Southeast Asia
+## First line — your local Trimble reseller
 
-Contact your local Trimble reseller first for a licence question, an installation question or a training question.
+For licensing, installation, configuration, and training enquiries, contact your local Trimble reseller. They hold the context on your specific deployment and will usually resolve the issue faster than a general support channel.
 
 ## Tekla Support Helpdesk
 
-Use the Tekla Support Helpdesk for a software fault or a data fault. Give this information with each request:
+For confirmed software defects and data issues, raise a case with the Tekla Support Helpdesk.
 
-1. The Tekla PowerFab version and the service pack.
-2. The module and the exact menu path.
-3. The full error message text.
-4. A screenshot of the screen.
-5. The steps that give the error again.
+### What to include in a support request
 
-!!! tip
-    A support request with a screenshot and the exact steps gets a faster answer. A request with only "it does not work" needs more messages before the work starts.
+Providing this information up front typically removes an entire round of back-and-forth:
+
+1. **Version and service pack** — for example, Tekla PowerFab 2026 SP2
+2. **Module and exact menu path** — for example, **Review > Cut Lists**
+3. **Full error message text**, copied rather than paraphrased
+4. **A screenshot** of the screen showing the problem
+5. **Reproduction steps** — what you did immediately before the issue appeared
+6. **Whether it is reproducible**, and whether it affects one user or everyone
+
+!!! tip "Reproducibility is the single most useful thing you can supply"
+    A case that says *"it does not work"* will generate several clarifying emails before investigation even begins. A case that says *"performing these four steps produces this error every time, on every machine"* usually gets a direct answer on the first reply.
 
 ## Documentation
 
-- Tekla User Assistance: [support.tekla.com](https://support.tekla.com)
-- Product documentation: [docs.tekla.com](https://docs.tekla.com)
+| Resource | URL |
+|---|---|
+| Tekla User Assistance | [support.tekla.com](https://support.tekla.com) |
+| Product documentation | [docs.tekla.com](https://docs.tekla.com) |
 
-!!! info "Content to add"
-    Add the local support email address, the phone number and the office hours here.
+!!! info "To be completed"
+    Add the local support email address, telephone number, office hours, and escalation contacts for this region.

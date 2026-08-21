@@ -1,23 +1,29 @@
-# Day 2 — Estimating and Bidding
+# Day 2 — Estimating & Bidding
 
-Day 2 covers the **Estimating** module from the first setup to the finished proposal.
+Day 2 covers the **Estimating** module from first configuration through to a formal proposal. This is the module where jobs are won or lost, so accuracy in the setup matters as much as speed in the takeoff.
 
-**Manual chapter:** 3
+- **Manual chapter** — 3
+- **Modules** — Estimating, Maintenance
+- **Primary audience** — Estimators, sales, commercial managers
 
-## Objectives
+## Learning outcomes
 
-After Day 2, the trainees can do these tasks:
+By the end of Day 2, participants will be able to:
 
-- Set the fabricator information, the labor rates and the paint systems.
-- Make a manual takeoff.
-- Make an accessory, an assembly and a parametric assembly.
-- Import an IFC model into an estimate.
-- Read the labor calculation in the **Labor Diagnostics** screen.
-- Make a proposal.
+- Configure fabricator capabilities, labour rates, cleaning, and paint systems
+- Build a manual takeoff from a drawing
+- Create accessories, assemblies, and parametric assemblies
+- Import a 3D model into an estimate using Estimodeling
+- Run a combine within an estimate and apply job-specific pricing
+- Trace a labour calculation through **Labor Diagnostics** and apply manual overrides
+- Produce a formal proposal for a client
 
 ## Sessions
 
-| Session | Topic | Chapters |
+| Session | Focus | Chapters |
 |---|---|---|
-| [Morning](morning.md) | Estimating setup and manual takeoffs | 3.0 thru 3.1.3 |
-| [Afternoon](afternoon.md) | Estimodeling, pricing and labor | 3.2 thru 3.4 |
+| [Morning](morning.md) | Estimating setup and manual takeoffs | 3.0 – 3.1.3 |
+| [Afternoon](afternoon.md) | Estimodeling, pricing, and labour | 3.2 – 3.4 |
+
+!!! tip "Sequencing matters"
+    Teach the manual takeoff before Estimodeling, even though most customers will use the import in practice. Participants who have entered material by hand understand what the imported data actually represents — those who go straight to the import treat it as a black box.

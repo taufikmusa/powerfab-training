@@ -1,24 +1,29 @@
-# Day 5 — Stock Management and Automation
+# Day 5 — Stock Control & Automation
 
-Day 5 closes the loop. It covers the stock, the material traceability and the automated tasks. The last hours are for practice and questions.
+Day 5 closes the loop. It covers physical stock, material traceability, and the automated tasks that keep reporting running without anyone remembering to press a button. The final hours are reserved for practice and open questions.
 
-**Manual chapters:** 8 and 9
+- **Manual chapters** — 8 and 9
+- **Modules** — Inventory, Automated Events, Project Management
+- **Primary audience** — Yard foremen, accounts, system administrators, project managers
 
-## Objectives
+## Learning outcomes
 
-After Day 5, the trainees can do these tasks:
+By the end of Day 5, participants will be able to:
 
-- Tell the difference between **Inventory** and **Inventory History**.
-- Run the AUDIT report and the JOBSUM report.
-- Pull an inventory valuation for the end of the month.
-- Find a missing heat document and attach it.
-- Use manual combine mode.
-- Make an automated report event.
-- Read the project summary report.
+- Distinguish between Inventory and Inventory History, and know when to use each
+- Run the AUDIT and JOBSUM reports
+- Produce inventory valuations by date, by date and time, and by archive
+- Identify missing heat documents and attach them retrospectively
+- Use Manual Combine Mode to override standard combining behaviour
+- Schedule automated report events and configure failure notifications
+- Read the Project Summary Report as a single view of the whole workflow
 
 ## Sessions
 
-| Session | Topic | Chapters |
+| Session | Focus | Chapters |
 |---|---|---|
 | [Morning](morning.md) | Inventory control and documentation | 8 |
 | [Afternoon](afternoon.md) | Automated events and workflow review | 9 and 4.12 |
+
+!!! tip "Leave real time for practice"
+    The most valuable hour of the week is often the last one. Participants running a complete job on their own, unassisted, is what converts five days of demonstration into working knowledge. Plan the content so that hour survives.

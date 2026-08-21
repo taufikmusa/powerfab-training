@@ -1,37 +1,41 @@
 # Tekla PowerFab Training
 
-Welcome to the training site for Tekla PowerFab. Trimble Solutions Southeast Asia keeps this site.
+Official training documentation for Tekla PowerFab, maintained by Trimble Solutions Southeast Asia. This site supports the five-day instructor-led programme and the hands-on implementation workflow that follows it.
 
-!!! info "Before you start"
-    Get access to Tekla PowerFab Office and to Tekla PowerFab Go. Ask your trainer for the training database.
+!!! info "Before you begin"
+    You will need access to **Tekla PowerFab Office**, **Tekla PowerFab Go**, and the training database. Your trainer will provide login credentials and the exercise files.
 
-## What you find here
+## How this site is organised
 
-- **Day 1 thru Day 5** — one morning session and one afternoon session for each training day.
-- **Implementation** — the 18-step workflow exercise. It moves a job from a 3D model to a shipping ticket.
-- **Resources** — the glossary, the trainer checklist and the support contacts.
+| Section | What it covers |
+|---|---|
+| **Day 1 – Day 5** | The core curriculum. Each day is split into a morning and an afternoon session, mapped directly to the chapters of the Tekla PowerFab Fundamentals manual. |
+| **Implementation** | An 18-step end-to-end exercise that carries a single job from a 3D model in Tekla Structures all the way to a shipping ticket. |
+| **Resources** | Glossary of terms, trainer preparation checklist, and support contacts. |
 
-## The five training days
+## The five-day curriculum
 
-| Day | Focus | Manual chapters |
-|---|---|---|
-| [Day 1](day-1/index.md) | System foundation and administration | 1 and 2 |
-| [Day 2](day-2/index.md) | Estimating and bidding | 3 |
-| [Day 3](day-3/index.md) | Project launch and procurement | 4, 5 and 6 |
-| [Day 4](day-4/index.md) | Shop floor fabrication | 7 |
-| [Day 5](day-5/index.md) | Stock management and automation | 8 and 9 |
+| Day | Theme | Modules covered | Manual chapters |
+|---|---|---|---|
+| [Day 1](day-1/index.md) | System foundation | Administration | 1 – 2 |
+| [Day 2](day-2/index.md) | Estimating & bidding | Estimating | 3 |
+| [Day 3](day-3/index.md) | Project launch & procurement | Project Management, Combining, Production Control, Purchasing | 4 – 6 |
+| [Day 4](day-4/index.md) | Shop floor fabrication | Production Control, Inspection, PowerFab Go | 7 |
+| [Day 5](day-5/index.md) | Stock control & automation | Inventory, Automated Events | 8 – 9 |
 
-## The daily pattern
+## How each day runs
 
-Each day has the same shape:
+Every training day follows the same rhythm, so participants always know what to expect:
 
-1. The morning session gives the concept and the setup.
-2. The afternoon session gives the hands-on work.
-3. The last hour of each day is for questions.
+1. **Morning** — concepts, configuration, and the setup work that has to happen before anything else can function.
+2. **Afternoon** — hands-on application, working in the software with realistic data.
+3. **Final hour** — open questions, plus time to practise in the sandbox database.
 
-!!! tip
-    Do the [Implementation](implementation/index.md) exercise again after Day 5. One full pass through the workflow makes the five days clear.
+Topics are delivered using the **Tell, Show, Do** method: explain the reason for the task, demonstrate it once on screen, then let participants repeat it themselves.
 
-## Software versions
+!!! tip "Get the most out of the week"
+    Work through the [Implementation exercise](implementation/index.md) once after Day 5. A single complete pass through the workflow is what turns five days of separate modules into one coherent picture.
 
-This site uses **Tekla PowerFab 2026 SP2** with the SEA regional database. The steps can change in an older version.
+## Version reference
+
+This documentation is written against **Tekla PowerFab 2026 SP2** running the **SEA regional database**. Menu paths and screen layouts may differ slightly in earlier releases — where a difference is significant, it is flagged in the relevant section.

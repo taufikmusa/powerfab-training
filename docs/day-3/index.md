@@ -1,24 +1,30 @@
-# Day 3 — Project Launch and Procurement
+# Day 3 — Project Launch & Procurement
 
-Day 3 moves the job from an awarded bid to an active project. It also starts the purchasing work.
+Day 3 is the pivot point of the week. The job stops being a bid and becomes a live project, the detailed model arrives, and real money starts being committed through purchase orders.
 
-**Manual chapters:** 4, 5 and 6
+- **Manual chapters** — 4, 5, and 6
+- **Modules** — Project Management, Combining, Production Control, Purchasing
+- **Primary audience** — Project managers, purchasing agents, production managers
 
-## Objectives
+## Learning outcomes
 
-After Day 3, the trainees can do these tasks:
+By the end of Day 3, participants will be able to:
 
-- Make a Project Management job and link the estimate to it.
-- Make a drawing log, a transmittal and an RFI.
-- Apply a schedule template and set the initial baseline.
-- Import an advance bill of materials into the **Combining** module.
-- Import the final bill of materials into **Production Control**.
-- Make a requisition and turn it into a purchase order.
-- Receive material into inventory with a heat number.
+- Create a Project Management job and link the winning estimate to it
+- Maintain drawing logs, transmittals, RFIs, and change orders
+- Apply a schedule template and establish a baseline
+- Import an advance bill of materials for early procurement
+- Import a final BOM into Production Control via PowerFab eXchange
+- Build sequences, lots, work packages, and fabrication routes
+- Link the advance bill to the final BOM and interpret critical differences
+- Convert requisitions into purchase orders and receive material with heat traceability
 
 ## Sessions
 
-| Session | Topic | Chapters |
+| Session | Focus | Chapters |
 |---|---|---|
-| [Morning](morning.md) | Project Management and Combining | 4 and 5 |
-| [Afternoon](afternoon.md) | Production Control 1 and Purchasing | 6.0 thru 6.15 |
+| [Morning](morning.md) | Project Management and Combining | 4 – 5 |
+| [Afternoon](afternoon.md) | Production Control 1 and Purchasing | 6.0 – 6.15 |
+
+!!! warning "This is the heaviest day of the week"
+    Day 3 spans three manual chapters and four modules. Protect the afternoon — if the morning overruns, trim the contract and invoicing material rather than cutting into Production Control setup, because Day 4 cannot run without it.

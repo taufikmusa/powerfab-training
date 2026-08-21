@@ -1,52 +1,90 @@
 # Day 3 — Morning Session
 
-- **Topic:** Project Management and Combining
-- **Chapters:** 4 and 5
+- **Focus** — Project Management and Combining
+- **Chapters** — 4 and 5
+- **Modules** — Project Management, Combining
 
-## 1. Project Management initialization (Chapters 4.0 thru 4.1)
+---
 
-The **Project Management** module holds the full project together. It gets data from Estimating, Combining and Production Control.
+## 1. Initialising the project
 
-1. Make a new PRJ job.
-2. Add the firms: the client and the detailer.
-3. Link the estimate from Day 2 to this project.
+The **Project Management** module is the hub that ties everything together. It pulls data from Estimating, Combining, and Production Control, and it is where project managers spend most of their time.
 
-## 2. Document control (Chapters 4.2 thru 4.5)
+**Steps**
+
+1. Create a new **PRJ** job.
+2. Add the relevant firms — client, detailer, engineer, erector.
+3. Link the estimate created on Day 2 to this project.
+
+Linking the estimate matters more than it appears. It is what allows the project summary reports on Day 5 to compare estimated against actual.
+
+---
+
+## 2. Document control
 
 ### 2.1 Drawing logs
 
-1. Open the drawing log.
-2. Use **Batch Insert – From Files** to import the detailing drawings and the design drawings.
+**Steps**
 
-### 2.2 Transmittals, RFIs and change orders
+1. Open the drawing log for the project.
+2. Use **Batch Insert – From Files** to import detailing and design drawings in bulk rather than one at a time.
 
-1. Make one transmittal and send it.
-2. Make one RFI and set the response date.
-3. Attach a file to the RFI.
-4. Close the RFI after the answer.
+### 2.2 Transmittals, RFIs, and change orders
 
-## 3. Project scheduling and contracts (Chapters 4.6 thru 4.7)
+**Steps**
 
-1. Apply a schedule template, for example the "Structural" template.
-2. Change the duration dates on the Gantt chart.
-3. Set the initial baseline.
-4. Make a Schedule of Values and do one invoice against it.
+1. Create a transmittal and issue it to a firm from the Address Book.
+2. Raise an RFI, set the required response date, and attach supporting files.
+3. Close the RFI once a response is received.
+4. Create a change order and note how it links back to the project cost.
 
-!!! warning
-    The Gantt chart edit mode has a time limit of 180 seconds. Save the change before the limit. Examine each date that you type. One wrong year makes the project duration very long.
+!!! tip "The Address Book pays off here"
+    Every document in this section pulls its recipients from the Address Book configured on Day 1. If firms were entered with the wrong Firm Type, participants will discover it now — which is a useful teaching moment rather than a problem.
 
-!!! warning
-    Click **Apply Template** one time only. A second click adds the same tasks again with no message.
+---
 
-## 4. Combining and the advance bill of materials (Chapter 5)
+## 3. Scheduling and contracts
 
-The **Combining (CMB)** module buys material early, before the detailing is complete.
+**Steps**
 
-1. Import a CMB job with IFC or with KISS.
-2. Examine the advance bill of materials.
+1. Apply a schedule template, such as the **Structural** template.
+2. Adjust task durations on the Gantt chart to match the real programme.
+3. Set the **Initial Baseline** so future progress can be measured against the original plan.
+4. Create a Schedule of Values and raise a single invoice against it.
+
+!!! warning "Three known behaviours to warn participants about"
+    **Edit mode times out at 180 seconds.** Changes not saved within that window are lost without warning. Save frequently.
+
+    **Date typos are silent and destructive.** A mistyped year turns a four-month programme into a four-year one, and the Gantt chart will happily display it. Verify each date after entry.
+
+    **Apply Template is not idempotent.** Clicking it a second time silently duplicates every task in the schedule. If the task list suddenly looks twice as long, this is why.
+
+---
+
+## 4. Combining and the Advance Bill of Materials
+
+The **Combining (CMB)** module exists to solve a timing problem: mill lead times are long, but detailing takes weeks. Combining lets the company order main members early, off a preliminary model, before connection design is finished.
+
+**Steps**
+
+1. Import a CMB job via IFC or KISS.
+2. Review the resulting Advance Bill of Materials.
 3. Load the material to a purchasing requisition.
+
+!!! info "Why this module exists"
+    Without an advance bill, the shop waits for detailing to finish before ordering steel, and the mill lead time then sits entirely on the critical path. Ordering main members early can pull weeks out of a programme — this is usually the clearest ROI story in the whole system.
+
+---
+
+## Wrap-up checklist
+
+- [ ] PRJ job created with firms attached and estimate linked
+- [ ] Drawings batch-imported into the drawing log
+- [ ] One transmittal issued and one RFI raised, attached, and closed
+- [ ] Schedule template applied once, dates verified, baseline set
+- [ ] Advance Bill imported and loaded to a requisition
 
 ## Exercise
 
-!!! info "Content to add"
-    Add the morning exercise steps and the screenshots here.
+!!! info "To be completed"
+    Add the morning exercise steps and supporting screenshots.
