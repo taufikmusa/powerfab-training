@@ -15,11 +15,22 @@ Every structure needs a single container in the management system before anythin
 **How to do it**
 
 1. Go to **Project Management > Project Management**.
+
+    ![Tekla PowerFab start screen with the Project Management module being opened](../assets/images/implementation/impl-step01-01.png)
+    <figcaption>Figure 1.1. Opening the Project Management module.</figcaption>
+
 2. Click **Add (F1)** at the bottom left.
+
+    ![Project Management job list with the Add button at the bottom left](../assets/images/implementation/impl-step01-02.png)
+    <figcaption>Figure 1.2. The job list — Add (F1) sits at the bottom left of the window.</figcaption>
+
 3. Enter a Job Number — use `TRN-001` for this exercise.
 4. Enter a Job Name, such as *Training Facility*.
 5. Complete the customer name and job location.
 6. Click **Save**.
+
+    ![New job entry window with Job Number and Job Name fields completed](../assets/images/implementation/impl-step01-03.png)
+    <figcaption>Figure 1.3. Job details — Job Number and Job Name are the two fields that matter most.</figcaption>
 
 **You should now have:** an empty PRJ job that everything else in this exercise will link back to.
 
@@ -43,6 +54,16 @@ Steel projects run on hard dates: drawings due, material ordered, fabrication st
 3. Click **Add Task** and create the major milestones: Detailing, Material Ordering, Fabrication, Erection.
 4. Assign start and end dates to each task.
 5. Save the schedule.
+
+<!-- SCREENSHOTS — Step 2
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step02-01.png, impl-step02-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step02-01.png)
+    <figcaption>Figure 2.1. Caption text.</figcaption>
+-->
 
 **You should now have:** a baseline programme the rest of the project can be measured against.
 
@@ -72,6 +93,16 @@ Mill lead times run into weeks or months. Waiting for every base plate, shear ta
 5. Go to **File > Export > IFC**.
 6. Enable **Base quantities** and export.
 
+<!-- SCREENSHOTS — Step 3
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step03-01.png, impl-step03-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step03-01.png)
+    <figcaption>Figure 3.1. Caption text.</figcaption>
+-->
+
 **You should now have:** an IFC file containing main members only, with preliminary marks assigned.
 
 ---
@@ -92,6 +123,16 @@ The Advance Bill is the staging area for material bought ahead of detailing. Imp
 4. Browse to the IFC file exported in Step 3.
 5. Work through the **Translate Shapes/Grades** window, mapping source profiles and grades to system equivalents.
 6. Confirm and complete the import.
+
+<!-- SCREENSHOTS — Step 4
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step04-01.png, impl-step04-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step04-01.png)
+    <figcaption>Figure 4.1. Caption text.</figcaption>
+-->
 
 **You should now have:** main members listed in the Advance Bill, ready to combine.
 
@@ -120,6 +161,16 @@ Steel is sold in long lengths. A column may be a fraction of one. Combining is t
 4. Review the results — the window shows exactly how the columns nest into available raw lengths.
 5. Click **Save Displayed Results & Close**.
 
+<!-- SCREENSHOTS — Step 5
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step05-01.png, impl-step05-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step05-01.png)
+    <figcaption>Figure 5.1. Caption text.</figcaption>
+-->
+
 **You should now have:** columns showing a **C** status, meaning they are solved and ready to purchase.
 
 ---
@@ -140,6 +191,16 @@ Knowing what to buy and actually buying it are two separate events. A requisitio
 4. Click **Add (F1)**, name the requisition `REQ-TRN-001`, and save.
 5. Highlight it and click **OK (F5)**.
 6. Open the **Purchasing** module, open the requisition, and use **Purchase Order** to issue it to a vendor.
+
+<!-- SCREENSHOTS — Step 6
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step06-01.png, impl-step06-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step06-01.png)
+    <figcaption>Figure 6.1. Caption text.</figcaption>
+-->
 
 **You should now have:** an issued purchase order against the main members.
 
@@ -164,6 +225,16 @@ While the mill produces the main steel, the detailer has a window to finish the 
 4. Apply connections at beam-to-column joints and at column bases.
 5. Run a clash check and resolve any conflicts, particularly bolt clashes.
 
+<!-- SCREENSHOTS — Step 7
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step07-01.png, impl-step07-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step07-01.png)
+    <figcaption>Figure 7.1. Caption text.</figcaption>
+-->
+
 **You should now have:** a fully detailed model ready for drawing production.
 
 ---
@@ -184,6 +255,16 @@ A welder at a workbench cannot use a 3D model. They need a 2D drawing. Similarly
 4. Repeat for **Single-Part Drawings**.
 5. Go to **File > Export > NC Files**.
 6. Select the `.nc1` format and click **Create**.
+
+<!-- SCREENSHOTS — Step 8
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step08-01.png, impl-step08-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step08-01.png)
+    <figcaption>Figure 8.1. Caption text.</figcaption>
+-->
 
 **You should now have:** assembly drawings, single-part drawings, and a set of NC files.
 
@@ -213,6 +294,16 @@ The model is now complete. The `.pfxt` package is what carries the final materia
 4. Tick the checkboxes for **Drawings** and **NC Files**.
 5. Export. The tool produces a `.pfxt` file.
 
+<!-- SCREENSHOTS — Step 9
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step09-01.png, impl-step09-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step09-01.png)
+    <figcaption>Figure 9.1. Caption text.</figcaption>
+-->
+
 **You should now have:** a single `.pfxt` package containing the complete detailed job.
 
 !!! warning "The Connector can report success and still fail"
@@ -237,6 +328,16 @@ This is the formal handover from engineering to production. **Production Control
 3. When prompted, select the **Production Control** module.
 4. Link the import to the master Project Management job `TRN-001` from Step 1.
 5. Click **Import** and let it process drawings, NC files, and the final material list.
+
+<!-- SCREENSHOTS — Step 10
+     Drop files into docs/assets/images/implementation/ named:
+       impl-step10-01.png, impl-step10-02.png, ...
+     Then delete this comment wrapper and indent each block 4 spaces
+     under the numbered step it belongs to.
+
+    ![Describe what the screenshot shows](../assets/images/implementation/impl-step10-01.png)
+    <figcaption>Figure 10.1. Caption text.</figcaption>
+-->
 
 **You should now have:** a live production job with drawings and machine files attached.
 

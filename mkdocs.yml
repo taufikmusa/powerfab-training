@@ -5,6 +5,8 @@ copyright: © 2026 Trimble Solutions
 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   font:
     text: Open Sans
     code: Roboto Mono
