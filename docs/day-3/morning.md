@@ -52,6 +52,11 @@ Linking the estimate matters more than it appears. It is what allows the project
 3. Set the **Initial Baseline** so future progress can be measured against the original plan.
 4. Create a Schedule of Values and raise a single invoice against it.
 
+!!! info "There is no Installation or Erection Status Link in PowerFab 2026"
+    Confirmed against live Trimble documentation. The only system Status Links available are Drawings Approved, Material Purchased, Material Received, TFS, Production Progress, Production Completed, Station Progress, Shipping Destination Progress, and Shipping Completed.
+
+    A task with no matching event — Installation is the usual case — needs **Status Link = [None]** and **Status Summary Method = No Factor**. Do not force-reuse an unrelated link to make the field look populated. The full walkthrough is at [Implementation Step 2](../implementation/part-1.md).
+
 !!! warning "Three known behaviours to warn participants about"
     **Edit mode times out at 180 seconds.** Changes not saved within that window are lost without warning. Save frequently.
 
