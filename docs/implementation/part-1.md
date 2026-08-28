@@ -4,6 +4,8 @@ Part 1 establishes the project, models enough of the structure to know what stee
 
 Use practice job `TRN-001` throughout.
 
+*Screenshots for Steps 2–6 were captured on practice job TRN-003. The click path is identical — only the job number on screen differs.*
+
 ---
 
 ## Step 1 — Create a Project Management job
@@ -69,8 +71,6 @@ Every structure needs a single container in the management system before anythin
 ## Step 2 — Create a project schedule
 
 **Role:** Project Manager · **Module:** Project Management
-
-*The Step 2 screenshots were captured on practice job TRN-003. The click path is identical — only the job number on screen differs.*
 
 **Why this matters**
 
@@ -223,19 +223,22 @@ Connections are usually not finalised at this stage, but purchasing needs to sta
     Still fully supported, and the safer fallback.
 
     1. Build the model without finalised connections — main members only.
-    2. Apply a **Preliminary mark** (the `PRELIM_MARK` UDA) to every part to be exported. This is non-negotiable.
-    3. Go to **File > Export > IFC** and export using the **Steel fabrication view** or **2x3 EM11** format.
-    4. Later, when importing to Advance Bill, map at least `PRELIM_MARK` to **Reference Number**.
+    2. Select the parts to mark, go to the **Drawings & reports** tab, click **Numbering settings**, and choose **Save preliminary numbers**. Every part to be exported needs one — this is non-negotiable.
 
-<!-- SCREENSHOTS — Step 3
-     Drop files into docs/assets/images/implementation/ named:
-       impl-step03-01.png, impl-step03-02.png, ...
-     Then delete this comment wrapper and indent each block 4 spaces
-     under the numbered step it belongs to.
+        ![Numbering settings menu open in Tekla Structures with Save preliminary numbers highlighted and its tooltip showing](../assets/images/implementation/impl-step03-01.png)
+        <figcaption>Figure 3.1. Save preliminary numbers, on the Drawings &amp; reports tab. The tooltip states it overwrites any previously saved preliminary numbers.</figcaption>
 
-    ![Describe what the screenshot shows](../assets/images/implementation/impl-step03-01.png)
-    <figcaption>Figure 3.1. Caption text.</figcaption>
--->
+    3. Confirm the mark landed: it appears as **Preliminary mark** on the part's **Parameters** tab, among the user-defined attributes.
+
+        ![Column properties dialog with the Parameters tab open and the Preliminary mark field showing C2](../assets/images/implementation/impl-step03-02.png)
+        <figcaption>Figure 3.2. The saved mark on a column — this is the `PRELIM_MARK` UDA that Advance Bill reads on import.</figcaption>
+
+    4. Go to **File > Export > IFC** and export using the **Steel fabrication view** or **2x3 EM11** format.
+
+        ![Export IFC dialog with Export type set to Steel fabrication view and the Tekla PowerFab property set selected](../assets/images/implementation/impl-step03-03.png)
+        <figcaption>Figure 3.3. Export type is the field that matters — Steel fabrication view, not Coordination view. Property sets should read Tekla PowerFab.</figcaption>
+
+    5. Later, when importing to Advance Bill, map at least `PRELIM_MARK` to **Reference Number**.
 
 **You should now have:** an IFC file containing main members only, with a preliminary mark on every part.
 
@@ -285,22 +288,40 @@ This is the moment data crosses the bridge from Tekla Structures into the busine
 3. Click **…**, browse to the exported IFC, and click **Open**.
 4. Click **Test Import** first. This is optional but worth the thirty seconds.
 5. Click **Import**.
+
+    ![Import dialog with the Advance Bill branch expanded, IFC selected, and the file path filled in](../assets/images/implementation/impl-step04-01.png)
+    <figcaption>Figure 4.1. The import tree. IFC sits under Advance Bill — the Production Control branch below it is Step 10, not this step.</figcaption>
+
 6. Type or select the job, then click **Load Info** to pull the details from the linked Project Management job created in Step 1.
-7. In **Import Field Map**, select the **Reference Number** row and map it to PowerFab's **Reference #** using **Set Field Mapping**.
+
+    ![Advance Bill Job Edit window with the Project Management Job field populated and the Load Info button beside it](../assets/images/implementation/impl-step04-02.png)
+    <figcaption>Figure 4.2. Load Info is what links this Advance Bill job to the Project Management job. Skip it and the job sits disconnected.</figcaption>
+
+    ![Import log reading 465 instances created with zero errors, behind a prompt asking whether to add and link a new Trimble Connect project](../assets/images/implementation/impl-step04-03.png)
+    <figcaption>Figure 4.3. The Trimble Connect prompt after saving. Optional — useful later for model visualisation, but not required for the import.</figcaption>
+
+7. In **Import Field Map**, select the reference row and set **Tekla PowerFab Field** to **Reference Number**, then click **Set Field Mapping**.
+
+    ![Import Field Map with the Tekla PowerFab Field dropdown set to Reference Number and an arrow pointing at the Set Field Mapping button](../assets/images/implementation/impl-step04-04.png)
+    <figcaption>Figure 4.4. Choosing the value in the dropdown does nothing on its own. Set Field Mapping is what commits it.</figcaption>
+
 8. Click **OK**.
 9. If a **Change Summary** dialog appears — normal on a first import — review it and click **Continue**.
+
+    ![Change Summary listing seven items, every row marked Add with Critical set to Yes](../assets/images/implementation/impl-step04-05.png)
+    <figcaption>Figure 4.5. Every row Add, every row Critical: Yes. Expected on a first import into an empty job — click Continue, not Cancel Import.</figcaption>
+
 10. Resolve any **Translate Shapes/Grades** prompts carefully. Map to the correct existing shape, or create a new one if nothing matches.
 11. Open the Advance Bill module and confirm the material list imported correctly.
 
-<!-- SCREENSHOTS — Step 4
-     Drop files into docs/assets/images/implementation/ named:
-       impl-step04-01.png, impl-step04-02.png, ...
-     Then delete this comment wrapper and indent each block 4 spaces
-     under the numbered step it belongs to.
+    ![Import completed message reporting Successful 7, Unsuccessful 0, and two PDF reports saved to the Document Index](../assets/images/implementation/impl-step04-06.png)
+    <figcaption>Figure 4.6. A clean import saves an Import Change Summary and an Import Change Log to the job's Document Index — a ready-made QA trail.</figcaption>
 
-    ![Describe what the screenshot shows](../assets/images/implementation/impl-step04-01.png)
-    <figcaption>Figure 4.1. Caption text.</figcaption>
--->
+    ![Select Advance Bill Job list with the new job highlighted alongside an earlier one](../assets/images/implementation/impl-step04-07.png)
+    <figcaption>Figure 4.7. The job now appears in the Advance Bill list, with its item count and total weight.</figcaption>
+
+    ![Advance Bill material list showing beam and column marks with profile, length and grade columns](../assets/images/implementation/impl-step04-08.png)
+    <figcaption>Figure 4.8. The imported material. Note the link counters at the bottom right — everything reads Not Linked until Step 5 combines it.</figcaption>
 
 **You should now have:** main members listed in the Advance Bill, linked to job `TRN-001`, ready to combine.
 
@@ -360,24 +381,39 @@ Steel is not bought piece by piece — it arrives in stock lengths or sheets, an
 **How to do it**
 
 1. With the Advance Bill job open, click the **Advance Bill** ribbon tab and then **Combine**.
-2. The *Select Combining Run* dialog opens. Choose **Mult** for linear items such as beams, angles, and columns; **Nest** for plates and gratings; or **Mult & Nest** for both.
+
+    ![Advance Bill ribbon menu open with Combine highlighted, above the job material list](../assets/images/implementation/impl-step05-01.png)
+    <figcaption>Figure 5.1. Combine sits on the Advance Bill ribbon, above Filter and Global Edit.</figcaption>
+
+2. The *Select Combining Run* dialog opens. Choose **Mult (F1)** for linear items such as beams, angles, and columns; **Nest (F2)** for plates and gratings; or **Mult & Nest (F3)** for both.
+
+    ![Select Combining Run dialog with an empty run list and Mult, Nest and Mult and Nest buttons along the bottom](../assets/images/implementation/impl-step05-02.png)
+    <figcaption>Figure 5.2. An empty run list is normal on a first combine. The three buttons choose the calculation type.</figcaption>
+
 3. *Combining Run Filters* opens. In the **Type** list — the left-hand column, not the separate *Filter Types* button — click the row for **Reference #**.
 4. Click **Select** on the right. The *Filter* dialog opens.
+
+    ![Combining Run Filters showing the Type list on the left with every filter value reading All, the Select and Find buttons on the right, and MULT F4 at the bottom](../assets/images/implementation/impl-step05-03.png)
+    <figcaption>Figure 5.3. Everything in one frame: the Type list on the left, Select on the right, the Filter Types button that is <em>not</em> the item picker, and MULT (F4) at the bottom. Every row reads All until a filter is applied.</figcaption>
+
 5. Click **`<<`** to clear the Included list, then Ctrl+click the specific items to include — the two columns — in *Not Included*, click **`>`** to move them across, and click **OK**.
 6. Confirm the **Reference #** row now shows the chosen items rather than *All*.
 7. Click the combine button at the bottom — **MULT (F4)**.
 8. *Combining Run Results* opens. Check **% Combined** and **Cost**.
+
+    ![Combining Run Results grid listing combined stock lengths with grade, weight, base price, cost and drop columns, and a summary panel reading 100 percent combined](../assets/images/implementation/impl-step05-04.png)
+    <figcaption>Figure 5.4. A healthy result: 100% combined, a real drop percentage, and real costs. Zeroes here mean the combine failed — see the warning below.</figcaption>
+
 9. Click **Save Displayed Results & Close**, choose **Requisitions**, add a new one, name it, and save.
 
-<!-- SCREENSHOTS — Step 5
-     Drop files into docs/assets/images/implementation/ named:
-       impl-step05-01.png, impl-step05-02.png, ...
-     Then delete this comment wrapper and indent each block 4 spaces
-     under the numbered step it belongs to.
+    ![Prompt asking where to save the ordered pieces, offering Requisitions or Purchase Orders, with an arrow pointing at Save Displayed Results and Close](../assets/images/implementation/impl-step05-05.png)
+    <figcaption>Figure 5.5. Requisitions sends the material out for pricing; Purchase Orders commits immediately. Step 6 explains why the requisition route usually comes first.</figcaption>
 
-    ![Describe what the screenshot shows](../assets/images/implementation/impl-step05-01.png)
-    <figcaption>Figure 5.1. Caption text.</figcaption>
--->
+    ![Select Requisition dialog listing existing requisitions with an arrow pointing at the Add button](../assets/images/implementation/impl-step05-06.png)
+    <figcaption>Figure 5.6. Add creates a new requisition rather than appending to an existing one.</figcaption>
+
+    ![Requisition Edit window with the requisition number, date and item increment fields](../assets/images/implementation/impl-step05-07.png)
+    <figcaption>Figure 5.7. Name the requisition, then Save (F4).</figcaption>
 
 **You should now have:** the columns combined onto stock lengths, with a real percentage combined and a real cost, and a requisition holding the result.
 
@@ -449,22 +485,40 @@ After combining material into stock-length groups, the requisition is where the 
 **How to do it**
 
 1. Following on from Step 5's **Save Displayed Results & Close**, choose **Requisitions** when prompted.
+
+    ![Combining Run Results with the save prompt open and arrows pointing at the Requisitions button and Save Displayed Results and Close](../assets/images/implementation/impl-step06-01.png)
+    <figcaption>Figure 6.1. The hand-off point from Step 5. The combined stock lengths on screen are what lands in the requisition.</figcaption>
+
 2. In the *Select Requisition* dialog, click **Add**, enter a **Requisition #** — `RQ-001` — and click **Save**.
+
+    ![Select Requisition list with a Requisition Edit window open over it showing the requisition number field](../assets/images/implementation/impl-step06-02.png)
+    <figcaption>Figure 6.2. Creating the requisition. Existing requisitions stay listed behind it.</figcaption>
+
 3. The combined material populates into the new requisition automatically.
 4. Open the **Purchasing** module, go to the **Requisitions** tab, and open the requisition just created.
+
+    ![Select Requisition slash Purchase Order window on the Requisitions tab, with an arrow pointing at the Purchasing module button](../assets/images/implementation/impl-step06-03.png)
+    <figcaption>Figure 6.3. Purchasing opens on two tabs — Requisitions and Purchase Orders. Everything up to Step 6 lives on the first.</figcaption>
+
 5. Confirm each line shows the correct profile, grade, quantity, length, base price, and cost.
 6. Check **Linked to ABM** at the bottom of the line item detail. It should show a full ratio — 4/4 — confirming every piece is reconciled back to the original Advance Bill line.
-7. Once vendor pricing is confirmed, and only then, highlight the requisition and click **Load Material into Purchase Order**, name the PO, and click **OK** to formally commit.
 
-<!-- SCREENSHOTS — Step 6
-     Drop files into docs/assets/images/implementation/ named:
-       impl-step06-01.png, impl-step06-02.png, ...
-     Then delete this comment wrapper and indent each block 4 spaces
-     under the numbered step it belongs to.
+    ![Requisition detail screen with an arrow pointing at Linked to ABM reading four of four, and a Switch to Manual Combine Mode toggle at the top left](../assets/images/implementation/impl-step06-04.png)
+    <figcaption>Figure 6.4. Linked to ABM: 4/4 — check this per line, not once per requisition. Note the toggle top-left reads <em>Switch to Manual Combine Mode</em>; the purchase order screen has a lookalike that reads Receive Mode instead (Step 13).</figcaption>
 
-    ![Describe what the screenshot shows](../assets/images/implementation/impl-step06-01.png)
-    <figcaption>Figure 6.1. Caption text.</figcaption>
--->
+7. Once vendor pricing is confirmed, and only then, open the requisition itself, go to the **Requisition** ribbon tab, and click **Load Material Into Purchase Order**. Pick or create the PO, then **OK** to formally commit.
+
+    ![Requisition ribbon menu open with Load Material Into Purchase Order highlighted and Load Selected Material Into Purchase Order beneath it](../assets/images/implementation/impl-step06-05.png)
+    <figcaption>Figure 6.5. The command lives on this ribbon tab, inside the opened requisition — not on the list screen, where right-clicking offers only Select All and Export to Excel.</figcaption>
+
+    ![Select Purchase Order window with a Purchase Order Edit dialog open, the Job number field arrowed](../assets/images/implementation/impl-step06-06.png)
+    <figcaption>Figure 6.6. Creating the purchase order the material transfers into.</figcaption>
+
+    ![Purchase order detail screen listing the transferred material, with a Switch to Receive Mode toggle at the top left](../assets/images/implementation/impl-step06-07.png)
+    <figcaption>Figure 6.7. The material has moved across. Received, Rejected and Cancelled all read zero until Step 13 — and this is the screen that offers Receive Mode.</figcaption>
+
+    ![Purchase Orders tab listing the new purchase order with its item count and total cost](../assets/images/implementation/impl-step06-08.png)
+    <figcaption>Figure 6.8. The PO now appears on the Purchase Orders tab, carrying its item count and total cost.</figcaption>
 
 **You should now have:** requisition `RQ-001` holding the combined columns, every line fully linked back to the Advance Bill.
 
