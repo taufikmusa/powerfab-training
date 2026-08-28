@@ -39,6 +39,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: false
   - attr_list
   - md_in_html
   - tables
@@ -71,8 +73,10 @@ nav:
       - Afternoon Session: day-5/afternoon.md
   - Implementation:
       - implementation/index.md
-      - Part 1 — Steps 1 to 10: implementation/part-1.md
-      - Part 2 — Steps 11 to 18: implementation/part-2.md
+      - Part 1 — Steps 1 to 6: implementation/part-1.md
+      - Part 2 — Steps 7 to 13: implementation/part-2.md
+      - Part 3 — Steps 14 to 18: implementation/part-3.md
+      - Practice Checklist: implementation/practice-checklist.md
   - Resources:
       - resources/glossary.md
       - Trainer Checklist: resources/trainer-checklist.md

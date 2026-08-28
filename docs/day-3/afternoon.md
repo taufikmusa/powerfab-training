@@ -48,6 +48,9 @@ A route defines the path a piece takes through the shop — for example, Saw →
 1. Build a fabrication route from the available stations.
 2. Apply the route to the imported material.
 
+!!! info "Menu change in PowerFab 2026"
+    **Station and Route Setup** moved from directly under *Maintenance > Production Control* into a new **Fabrication Maintenance** submenu in Tekla PowerFab 2026. Older reference material points at the previous location.
+
 !!! danger "Assign routes before building cut lists"
     This is one of the most costly sequencing mistakes in the system, and it was confirmed live during a technical enablement session.
 
@@ -79,6 +82,11 @@ This comparison is the safety net for early procurement. It answers the question
 1. Send all unlinked material to a requisition.
 2. Combine it using **Mult** and **Nest**.
 3. Push the requisition through to a purchase order.
+
+!!! warning "Load Material Into Purchase Order is not on the list screen"
+    Right-clicking the *Select Requisition/Purchase Order* list gives only generic grid and export options — Select All, Export to Excel. The command that actually converts a requisition lives on the **Requisition** ribbon tab **inside the opened requisition**.
+
+    Participants reliably lose time here. Show them the detail screen, not the list.
 
 !!! warning "A requisition is not an order"
     Material sitting on a requisition that was never converted to a purchase order will never arrive and will never appear in inventory — and nothing in the system flags it. This exact gap was traced during a live session on requisition RQ-001. Build a habit of reviewing the open requisition list at the end of each procurement cycle.

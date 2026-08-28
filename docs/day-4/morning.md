@@ -14,13 +14,21 @@ A cut list converts combined material into a specific, actionable batch of work 
 
 **Steps**
 
-1. Go to **Review > Cut Lists**.
-2. Create a new cut list and save it with a meaningful name, such as *Monday Morning Saw Batch*.
-3. Use the **Prioritization** tool to sequence the work in the order the shop should tackle it.
-4. Generate the cut list report for the operator.
+1. Go to **Review > Cut Lists** and click **New Cut List**.
+2. In *Purchasing Report Filters*, leave the filters at the default (All), or narrow by Shape or Category for separate lists per material type.
+3. Click **Make Report**, choose a cutting list report in *Report Selection*, and click **View** to preview it.
+4. Confirm the items, lengths, and quantities look correct, then close the preview.
+5. Click **Save Cut List**, enter a **Description** and **Date Required** — *Monday Morning Saw Batch*, for example — and tick **Share** or **Lock** as appropriate.
+6. Click **Save To Cut List**.
+7. Use the **Prioritization** tool to sequence the work in the order the shop should tackle it.
+
+!!! danger "Requisitioned material is silently excluded"
+    A cut list can only be built from material that is on a **purchase order** or **already in stock**. Anything still sitting on a requisition is not eligible — and Tekla PowerFab throws no error. It simply leaves those rows out, which looks like a bug if participants are not expecting it.
+
+    Confirmed live: a job's UC columns never appeared in the cut list because their requisition had not been converted to a PO and received.
 
 !!! warning "Common navigation error"
-    New users frequently go to **Dashboards > Cut List Management** when trying to create a cut list. That screen manages cut lists that already exist. Creation happens under **Review > Cut Lists**.
+    New users frequently go to **Dashboards > Cut List Management** when trying to create a cut list. That menu launches the PowerFab Go shop-floor dashboard — a different product surface. Creation happens under **Review > Cut Lists**.
 
 ### In Tekla PowerFab Go
 
@@ -57,8 +65,11 @@ Piece tracking moves material through the stations and routes configured on Day 
 
 **Steps**
 
-1. Open the piece tracking screen.
-2. Track a single assembly through one station.
+1. Go to **Production Control > Piece Tracking**. This opens *Station Summary*, listing every station with assigned work and its total, completed, and remaining quantities.
+2. Select a station and click **Add Completed**.
+3. Pick the station from the **Station** dropdown — items only populate the *Not Included* list once a station is chosen.
+4. Move the finished items from *Not Included* to *Included*.
+5. Set **Completed By** and **Date**, then click **Add Material**.
 
 ### In Tekla PowerFab Go
 
