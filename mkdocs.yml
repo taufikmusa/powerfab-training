@@ -1,7 +1,7 @@
 site_name: Tekla PowerFab Training
 site_description: Trimble Tekla PowerFab 5-day training programme and implementation workflow
 site_url: https://taufikmusa.github.io/powerfab-training/
-copyright: © 2026 Trimble Solutions
+copyright: 2026 Trimble SEA
 
 theme:
   name: material
@@ -24,6 +24,9 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
+
+extra:
+  generator: false
 
 extra_css:
   - assets/trimble-theme.css
