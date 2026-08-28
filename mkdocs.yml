@@ -16,7 +16,6 @@ theme:
       accent: amber
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
     - navigation.indexes
     - toc.follow
@@ -73,9 +72,30 @@ nav:
       - Afternoon Session: day-5/afternoon.md
   - Implementation:
       - implementation/index.md
-      - Part 1 — Steps 1 to 6: implementation/part-1.md
-      - Part 2 — Steps 7 to 13: implementation/part-2.md
-      - Part 3 — Steps 14 to 18: implementation/part-3.md
+      - Part 1 — Steps 1 to 6:
+          - implementation/part-1/index.md
+          - Step 1 — Create a Project Management job: implementation/part-1/step-01.md
+          - Step 2 — Create a project schedule: implementation/part-1/step-02.md
+          - Step 3 — Model in Tekla Structures, assign preliminary marks, and export: implementation/part-1/step-03.md
+          - Step 4 — Import the IFC into the Advance Bill: implementation/part-1/step-04.md
+          - Step 5 — Combine partially in the Advance Bill: implementation/part-1/step-05.md
+          - Step 6 — Send to requisition and purchasing: implementation/part-1/step-06.md
+      - Part 2 — Steps 7 to 13:
+          - implementation/part-2/index.md
+          - Step 7 — Complete the connections in Tekla Structures: implementation/part-2/step-07.md
+          - Step 8 — Create drawings and export NC files: implementation/part-2/step-08.md
+          - Step 9 — Export to PowerFab as `.pfxt`: implementation/part-2/step-09.md
+          - Step 10 — Import the `.pfxt` into Production Control: implementation/part-2/step-10.md
+          - Step 11 — Combine the balance material in Production Control: implementation/part-2/step-11.md
+          - Step 12 — Send balance material to requisition and purchasing: implementation/part-2/step-12.md
+          - Step 13 — Receive the material: implementation/part-2/step-13.md
+      - Part 3 — Steps 14 to 18:
+          - implementation/part-3/index.md
+          - Step 14 — Apply the fabrication route: implementation/part-3/step-14.md
+          - Step 15 — Create a cut list: implementation/part-3/step-15.md
+          - Step 16 — Process the cut list: implementation/part-3/step-16.md
+          - Step 17 — Production tracking: implementation/part-3/step-17.md
+          - Step 18 — Create a load and ship: implementation/part-3/step-18.md
       - Practice Checklist: implementation/practice-checklist.md
   - Resources:
       - resources/glossary.md

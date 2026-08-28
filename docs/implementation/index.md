@@ -17,9 +17,9 @@ This exercise fixes that. Working through it once shows exactly how a decision m
 
 | Part | Steps | Covers |
 |---|---|---|
-| [Part 1](part-1.md) | 1 – 6 | Project setup, preliminary model, and early procurement |
-| [Part 2](part-2.md) | 7 – 13 | Detailing, handover to Production Control, and the balance material |
-| [Part 3](part-3.md) | 14 – 18 | Routing, cutting, tracking, and shipping |
+| [Part 1](part-1/index.md) | 1 – 6 | Project setup, preliminary model, and early procurement |
+| [Part 2](part-2/index.md) | 7 – 13 | Detailing, handover to Production Control, and the balance material |
+| [Part 3](part-3/index.md) | 14 – 18 | Routing, cutting, tracking, and shipping |
 | [Practice Checklist](practice-checklist.md) | 1 – 18 | Click path only, for a second hands-on run |
 
 Each step carries the same six sections: the role responsible, why the step matters, the click-by-click instructions, the mistakes that catch people out, an FAQ, and field notes recorded during a live test run.

@@ -2,7 +2,7 @@
 
 The condensed click path for all eighteen steps, with no explanations.
 
-This is for the **second** run, not the first. Work through [Part 1](part-1.md), [Part 2](part-2.md), and [Part 3](part-3.md) once so the concepts are understood, then use this page hands-on to build speed.
+This is for the **second** run, not the first. Work through [Part 1](part-1/index.md), [Part 2](part-2/index.md), and [Part 3](part-3/index.md) once so the concepts are understood, then use this page hands-on to build speed.
 
 !!! info "Job reference"
     Practice job `TRN-001`, requisition `RQ-001`, purchase order `TRN-001`. Tekla PowerFab 2026 SP2 running the SEA regional database.
