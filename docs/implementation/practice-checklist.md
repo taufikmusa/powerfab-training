@@ -69,7 +69,9 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 ### Step 7 — Complete the connections (Tekla Structures)
 
-- [ ] Build connections — auto-connections are fine for practice
+- [ ] Select the members → **AutoConnection** → **Rule groups** tab
+- [ ] Connection selection → **End_Plate** · connection parameters → **Green Book 1**
+- [ ] **Create connections**
 - [ ] Reassign final assembly marks
 - [ ] **Check for case-colliding marks** (`M1` versus `m1`) before moving on
 - [ ] Save and update the model

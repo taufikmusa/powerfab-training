@@ -10,21 +10,17 @@ Material has at least been requisitioned off the preliminary model, so the detai
 **How to do it**
 
 1. Open the Tekla Structures model.
-2. Add connections to the members. Auto-connections such as fin plates are fine for a practice run.
-3. Reassign final assembly marks where needed, replacing the preliminary marks used in Step 3.
-4. Check for case-colliding part marks before going any further — see the warning below.
-5. Run a clash check and resolve any conflicts, particularly bolt clashes.
-6. Save and update the model.
+2. Select the members to be connected, then open **AutoConnection**.
+3. On the **Rule groups** tab, set **Choose predefined rule group for connection selection** to the joint type the exercise uses — **End_Plate** — and set **Choose predefined rule group for connection parameters selection** to **Green Book 1**.
+4. Click **Create connections**.
 
-<!-- SCREENSHOTS — Step 7
-     Drop files into docs/assets/images/implementation/ named:
-       impl-step07-01.png, impl-step07-02.png, ...
-     Then delete this comment wrapper and indent each block 4 spaces
-     under the numbered step it belongs to.
+    ![Tekla Structures AutoConnection dialog on the Rule groups tab, with End_Plate chosen for connection selection and Green Book 1 for connection parameters, alongside the three-bay training frame](../../assets/images/implementation/impl-step07-01.png)
+    <figcaption>Figure 7.1. The two dropdowns do different jobs. The upper one decides <em>which</em> connection is applied; the lower one decides <em>how</em> it is sized — bolt grade, plate thickness, edge distances. Setting the first and leaving the second on the wrong parameter group produces the right joint built to the wrong standard.</figcaption>
 
-    ![Describe what the screenshot shows](../../assets/images/implementation/impl-step07-01.png)
-    <figcaption>Figure 7.1. Caption text.</figcaption>
--->
+5. Reassign final assembly marks where needed, replacing the preliminary marks used in Step 3.
+6. Check for case-colliding part marks before going any further — see the warning below.
+7. Run a clash check and resolve any conflicts, particularly bolt clashes.
+8. Save and update the model.
 
 **You should now have:** a fully detailed model carrying final assembly marks, ready for drawing production.
 
@@ -34,7 +30,7 @@ Material has at least been requisitioned off the preliminary model, so the detai
     Build the habit of checking for case-only collisions right after adding connections, rather than discovering it via a cryptic import warning at Step 10.
 
 !!! warning "Review the joint types, do not just blanket-apply"
-    Auto-connections everywhere is fine for a training exercise. A real project needs the right connection type per joint, not a default applied across the board.
+    Auto-connections everywhere is fine for a training exercise. A real project needs the right connection type per joint, not a default applied across the board — and AutoConnection applies one rule group to everything currently selected, so a wide selection is how a beam-to-column joint ends up detailed as a beam-to-beam one.
 
 ??? question "Frequently asked questions"
     **Why wait until now to add connections — why not from the start?**
@@ -52,7 +48,7 @@ Material has at least been requisitioned off the preliminary model, so the detai
 ??? note "Field notes — from the live test run"
     Tekla PowerFab 2026, Trimble Malaysia install.
 
-    - Adding auto-connections (fin plates) went smoothly at this stage — no errors during modelling itself.
+    - Adding auto-connections went smoothly at this stage — no errors during modelling itself. The run used the **End_Plate** rule group with **Green Book 1** parameters.
     - The real complication from this step did not surface until Step 10's import: a case-colliding part mark (`M1` versus `m1`) created here caused one NC file to silently overwrite the other on disk.
 
 ---
