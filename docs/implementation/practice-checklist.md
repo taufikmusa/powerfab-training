@@ -78,11 +78,16 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 ### Step 8 — Create drawings and NC files
 
+- [ ] **Drawings & reports** → **Create fabrication drawing** → check **Creation review** → **Create**
 - [ ] Create assembly **and** single part drawings
-- [ ] **Print Drawings** — assembly first, then single parts
-- [ ] **File > Export > Tekla PowerFab** settings → tick **Generate CNC files** → **Save the setting**
+- [ ] **Document manager** → **Print drawings** → **PDF file** → **File location** `.\Plotfiles`
+- [ ] Confirm the PDFs landed — both assembly and single part
+- [ ] **File > Export > Tekla PowerFab** → **Submittal type: Fabrication** → its **Fabrication settings**
+- [ ] All three drawing types **Include**, each pointing at the folder you printed to
+- [ ] **CNC files** → **Generate CNC files - settings** → **PowerFab**
+- [ ] In **NC Files**: DSTV for Angle, Plate and Profile ticked → **Save** the named setting
 
-**Ticked is not saved.** Without clicking Save on that panel, the next export produces zero NC files silently.
+**Ticked is not saved.** The DSTV rows belong to a named setting; close the dialog without saving it and the next export produces zero NC files silently.
 
 ### Step 9 — Export to PowerFab
 
