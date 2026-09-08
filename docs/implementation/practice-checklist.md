@@ -98,14 +98,18 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 ### Step 10 — Import the `.pfxt` into Production Control
 
-- [ ] **File > Import > Production Control** → browse `.pfxt` → **Import**
-- [ ] Confirm or create the linked Project Management job — same job #
+- [ ] **File > Import** → **Production Control** → **PowerFab eXchange** → browse `.pfxt`
+- [ ] **Test Import** first, then **Import**
+- [ ] Confirm or create the job — check **Project Management Job** carries the same job #
+- [ ] Trimble Connect link prompt — optional, the import completes either way
 - [ ] **Import Field Map** → `PRELIM_MARK` row → **Reference #** → **Set Field Mapping** → **OK**
 - [ ] Resolve **Translate Shapes/Grades** prompts carefully
 - [ ] **Change Summary** → scroll to confirm all *Add* → **Continue**
+- [ ] Read the log — check the **CNC files found** count, not just Successful / Unsuccessful
 - [ ] Confirm the job appears under **Production Control > Select Production Control Job**
+- [ ] Confirm it carries **Items** and **Weight** — not 0 / 0Kg
 
-**Read the full import log**, not just the Successful / Unsuccessful count. Warnings hide inside successful imports.
+**Read the full import log**, not just the Successful / Unsuccessful count. Warnings hide inside successful imports; the reports are saved under **Document Index (F8)** if you closed the dialog.
 
 ### Step 11 — Combine the balance material
 
