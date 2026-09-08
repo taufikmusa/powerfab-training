@@ -4,6 +4,8 @@ Part 2 finishes the engineering, packages it for the shop, and closes the procur
 
 Complete [Part 1](../part-1/index.md) before starting.
 
+*Screenshots for Steps 7–11 were captured on practice jobs `TRN-003` and `TS1000`, and on a run that combined beams and columns together. The click path is identical — only the job numbers and the mix of shapes on screen differ.*
+
 ## Steps in this part
 
 - [Step 7 — Complete the connections in Tekla Structures](step-07.md)

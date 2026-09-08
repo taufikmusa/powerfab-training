@@ -113,11 +113,14 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 ### Step 11 — Combine the balance material
 
-- [ ] **Production Control** ribbon → **Combine** → **Mult**
-- [ ] **Combining Run Filters** → **Main Mark** / **Reference #** row → **Select** → choose items → **OK**
-- [ ] Run the combine → check real **% Combined** and **Cost**
+- [ ] **Production Control** ribbon → **Combine** → **Mult (F1)**
+- [ ] **Combining Run Filters** — leave rows on *All* for the whole balance, or **Main Mark** / **Reference #** row → **Select** → choose items → **OK**
+- [ ] **MULT (F4)**
+- [ ] Check each combined row has a real **Cost** and **Drop** — not the headline % alone
 - [ ] Hardware showing **Not Combined** is normal — no action needed
-- [ ] **Save Displayed Results & Close** → **Requisitions** → **Save**
+- [ ] **Save Displayed Results & Close** → **Requisitions** → pick or **Add (F1)** → **OK (F5)**
+- [ ] Reopen the requisition — confirm **Items** and **Weight** went up from 0
+- [ ] Confirm **Linked to PDC** is a full ratio
 
 ### Step 12 — Send to requisition and purchasing
 
