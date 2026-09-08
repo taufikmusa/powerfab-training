@@ -135,8 +135,11 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 ### Step 13 — Receive the material
 
-- [ ] Open the PO → **Switch to Receive Mode**
-- [ ] Select the line(s) → enter **Received** qty → optional **Receiving Fields** (heat number, country of origin, bill of lading) → **Save (F4)**
+- [ ] **Purchasing** → **Purchase Orders** tab (not Requisitions) → **Open (F5)**
+- [ ] **Switch to Receive Mode** — confirm the toggle now reads *Switch to Input Mode*
+- [ ] Select the line(s) → enter **Received** qty, or **Receive (F1)** / **Receive Displayed (F2)**
+- [ ] Optional **Receiving Fields** (heat number, country of origin, bill of lading) → **Save (F4)**
+- [ ] Back in Input Mode — confirm the **Received** counter moved off zero
 - [ ] Optional: repeat in PowerFab Go → **Inventory > Receive**
 
 **Receive Mode exists only on the purchase order.** The Requisition's lookalike toggle reads *Switch to Manual Combine Mode*.
