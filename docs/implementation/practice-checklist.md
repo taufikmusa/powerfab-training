@@ -126,8 +126,10 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 - [ ] **Purchasing > Requisitions** tab → confirm **Linked to PDC** is a full ratio
 - [ ] **Open the requisition** (double-click into the detail screen) → **Requisition** ribbon tab → **Load Material Into Purchase Order**
-- [ ] Pick or create the PO → work through **Purchasing Import Filters** → confirm
-- [ ] **Purchase Orders** tab — confirm the PO is now populated
+- [ ] Pick or **Add (F1)** the PO → **OK (F5)**
+- [ ] **Purchasing Import Filters** — check the **Filters Set** header reads *None* → **Import (F4)**
+- [ ] **Import Items** — confirm **Processed** equals **Total** → **OK**
+- [ ] **Purchase Orders** tab — confirm the PO carries the items and cost
 
 **The command is not on the list screen.** Right-clicking the list only offers Select All and Export to Excel.
 
