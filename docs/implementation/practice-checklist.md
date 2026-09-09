@@ -194,8 +194,11 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 ### Step 18 — Create a load and ship
 
 - [ ] **Production Control > Load Tracking** → **New Load**
-- [ ] Set **From** / **Destination Group** / **Load #** / **Trailer #** / **Haulage Company** → **Save**
-- [ ] **Add Material** → move items to *Included* → confirm
-- [ ] **Ship** → set **Date Shipped** → **Shipping Ticket** → **View** / **Print** / **Export**
+- [ ] Set **From** / **Destination Group** / **Load #** / **Trailer #** / **Haulage Company** / **Capacity** → **Save**
+- [ ] Save is what reveals the **Material** tab and the **Add Material** / **Ship** buttons
+- [ ] **Add Material** → move items to *Included* → check **New Total** against **Capacity** → confirm
+- [ ] Confirm **Assigned** and **Loaded** agree on the Totals panel
+- [ ] **Ship** → enter **Date Shipped** at the prompt → **Date Received** on delivery
+- [ ] **Shipping Ticket** → pick a copy → tick **Include Bill of Lading Cover Sheet** if needed → **View (F1)** → **Print (F2)**
 
-**Office will not block an incomplete load.** PowerFab Go 2026 will.
+**Office will not block an incomplete load.** PowerFab Go 2026 will. **Un-Ship** is the way back.
