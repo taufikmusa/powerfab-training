@@ -153,10 +153,15 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 - [ ] **Maintenance > Production Control > Fabrication Maintenance > Station and Route Setup** → **Route Maintenance**
 - [ ] Verify **TFS Station** = the **first** station (Cut/Saw)
 - [ ] Verify **Route Type** matches what is being routed — Assembly / Part / Assembly & Part
-- [ ] Verify the **In Route** station list and its order → **Save (F4)**
-- [ ] Select items → **Production Control > Modify Data > Global Edit (Selected)** → tick **Route** → pick route → **Update** → **Yes**
+- [ ] Verify the **In Route** station list and its order — check the **Not in Route** tab for anything missing → **Save (F4)**
+- [ ] On the job screen, confirm the route column reads *Unassigned* before you start
+- [ ] Select items → **Production Control > Modify Data > Global Edit (Selected)**
+- [ ] **Un-check All** → tick **Route** only → pick route → **Update (F4)** → **Yes**
+- [ ] Re-read the route column — it should now name the route
 
 **Fixing a route does not apply it.** Global Edit is a separate, mandatory step — and it must happen before Step 16.
+
+**Tick one box only.** Global Edit pre-fills every field from the selected item; each ticked box writes that value across the whole selection.
 
 ### Step 15 — Create a cut list
 
