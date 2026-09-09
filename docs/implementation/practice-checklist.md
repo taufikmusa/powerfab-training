@@ -183,9 +183,10 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 ### Step 17 — Production tracking
 
-- [ ] **Production Control > Piece Tracking** → **Station Summary**
-- [ ] Select a station → **Add Completed** → pick the **Station** from the dropdown
-- [ ] Move items *Not Included* → *Included* → set **Completed By** / **Date** → **Add Material**
+- [ ] **Production Control > Piece Tracking** → read **Station Summary** — rows present, not blank
+- [ ] Select a station → **Add Completed** → pick the **Station** from the dropdown first
+- [ ] Move items *Not Included* → *Included* → set **Completed By** / **Date**
+- [ ] Check the **To Add** weight → **Add Material**
 - [ ] Shop floor: repeat via PowerFab Go for real-time entry
 
 **A blank Station Summary means no route.** Go back to Step 14.

@@ -9,13 +9,26 @@ Once a piece has a route, every station it passes through needs to be logged so 
 
 === "In PowerFab Office"
 
-    1. Go to **Production Control** ribbon tab **> Piece Tracking**. This opens *Station Summary*, listing every station with assigned work and its **Total Qty**, **Completed Qty**, and **Remaining Qty**.
-    2. Select a station and click **Add Completed**.
-    3. In the *Station - Add Completed* dialog, pick the station from the **Station** dropdown if it is not already selected. Items only populate the *Not Included* list once a station is chosen.
-    4. Move the items that finished that station from *Not Included* to *Included* using the arrow buttons.
-    5. Set **Completed By** and **Date**, and optionally **Hours** and **Minutes**.
-    6. Click **Add Material** to save.
-    7. Repeat for each station as work progresses.
+    1. Go to **Production Control** ribbon tab **> Piece Tracking**.
+
+        ![The Production Control menu with Piece Tracking highlighted below Filter, Submittals, Combine and Purchasing](../../assets/images/implementation/impl-step17-01.png)
+        <figcaption>Figure 17.1. <strong>Piece Tracking</strong> is the entry point. <em>TFS Entry</em> and <em>Load Tracking</em> further down the same menu belong to Steps 16 and 18.</figcaption>
+
+    2. Read the *Station Summary* it opens: every station with assigned work, and its **Total Qty**, **Completed Qty**, **Hours** and **Remaining Qty**.
+
+        ![The Station Summary window with its column headers for Station, Total Qty, Total Weight, Completed Qty, Completed Weight, Hours, Remaining Qty and Remaining Weight, and no rows at all](../../assets/images/implementation/impl-step17-02.png)
+        <figcaption>Figure 17.2. This is the empty state, and it is worth recognising on sight. No rows does not mean no work has been done — it means no station list exists to report against. The warning below is about exactly this screen.</figcaption>
+
+    3. Select a station and click **Add Completed**.
+    4. In the *Station - Add Completed* dialog, pick the station from the **Station** dropdown if it is not already selected. Items only populate the *Not Included* list once a station is chosen.
+
+        ![The Station Add Completed dialog with a filter tree on the left, empty Not Included and Included lists, an Input panel, and station, work area, completed by, date, hours, minutes and batch fields on the right above Inspection and Add Material buttons](../../assets/images/implementation/impl-step17-03.png)
+        <figcaption>Figure 17.3. Captured with no station chosen — which is why both lists are empty and the <strong>Input</strong> panel is greyed out. <strong>To Add</strong> beside the station dropdown keeps a running weight of what is about to be committed, and the <strong>Include If Previous Station Not Completed</strong> tickbox at the bottom left is the per-entry counterpart to the route setting described below.</figcaption>
+
+    5. Move the items that finished that station from *Not Included* to *Included* using the arrow buttons.
+    6. Set **Completed By** and **Date**, and optionally **Work Area**, **Hours**, **Minutes** and **Batch ID**.
+    7. Check the **To Add** weight, then click **Add Material** to save.
+    8. Repeat for each station as work progresses.
 
 === "In PowerFab Go (shop floor)"
 
@@ -24,25 +37,20 @@ Once a piece has a route, every station it passes through needs to be logged so 
     3. Filter or scan to find the item at its current station.
     4. Confirm the quantity complete. This syncs back to Office in real time.
 
-<!-- SCREENSHOTS — Step 17
-     Drop files into docs/assets/images/implementation/ named:
-       impl-step17-01.png, impl-step17-02.png, ...
-     Then delete this comment wrapper and indent each block 4 spaces
-     under the numbered step it belongs to.
-
-    ![Describe what the screenshot shows](../../assets/images/implementation/impl-step17-01.png)
-    <figcaption>Figure 17.1. Caption text.</figcaption>
--->
+    !!! info "No captures for this path yet"
+        The screenshots on this page are all from PowerFab Office. The Go steps are documented from the trainer handout, not from a captured run.
 
 **You should now have:** live progress visible in **Production Status** and reflected in the Trimble Connect model.
 
 !!! warning "A blank Station Summary points back to Step 14"
-    If tracking appears to work but the Station Summary stays empty, the material has no route assigned. Fix the routing rather than troubleshooting the tracking screen — the tracking is behaving correctly, it simply has no stations to report against.
+    If tracking appears to work but the Station Summary stays empty — as in Figure 17.2 — the material has no route assigned. Fix the routing rather than troubleshooting the tracking screen — the tracking is behaving correctly, it simply has no stations to report against.
 
     And if the route was assigned *after* TFS, the Cut/Saw credit was never back-filled. Enter it manually via **Add Completed**.
 
-!!! info "Complete Previous Station First"
+!!! info "Complete Previous Station First — and its counterpart here"
     If a route's **Complete Previous Station First** checkbox is left unticked, stations can be logged out of order. That is genuinely useful when shop work happens out of sequence — but it should be a deliberate choice confirmed with the customer, not something discovered later.
+
+    The *Station - Add Completed* dialog carries the other half of the same rule: **Include If Previous Station Not Completed**, bottom left in Figure 17.3. The route setting is the standing policy; this tickbox is the one-off exception for a single entry.
 
 ??? question "Frequently asked questions"
     **Why does one station show a higher Total Qty than every other station on the same route?**
@@ -51,7 +59,11 @@ Once a piece has a route, every station it passes through needs to be logged so 
 
     **Why do items not appear in the Not Included list?**
 
-    A station has to be chosen in the **Station** dropdown first. The list only populates once it is selected.
+    A station has to be chosen in the **Station** dropdown first. The list only populates once it is selected — Figure 17.3 is the dialog in exactly that state, with the dropdown empty and both lists blank.
+
+    **What is the Inspection button on the Add Completed dialog?**
+
+    It records an inspection against the selection rather than a production completion. It is the same mechanism behind the standalone Inspection requirements described in the first question above — which is why an item can carry inspection activity at a station without ever having been routed through it.
 
     **Do I need to log in both Office and Go?**
 
