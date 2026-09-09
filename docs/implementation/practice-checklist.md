@@ -166,11 +166,12 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 ### Step 15 — Create a cut list
 
 - [ ] **Production Control > Review > Cut Lists** → **New Cut List**
-- [ ] Confirm filters — default All for a first run
-- [ ] **Make Report** → **View** → confirm materials look right → close preview
-- [ ] **Save Cut List** → fill **Description** and **Date Required** → **Save To Cut List** → **OK**
+- [ ] Confirm filters — check the **Filters Set** header, default All for a first run → **Make Report (F4)**
+- [ ] Pick a report → **View (F1)** → confirm materials look right → close preview
+- [ ] **Save Cut List** (on the Report Selection dialog) → **Description**, **Date Required**, **Workshop** / **Machine** / **Priority**
+- [ ] **Save To Cut List** → **OK**
 
-**Requisitioned material will not appear.** Only material on a PO or in stock is eligible, and nothing warns you.
+**Requisitioned material will not appear.** Only material on a PO or in stock is eligible, and nothing warns you — check the **P.O. #** column on the report, and use **Validate** on the Cut Lists screen.
 
 ### Step 16 — Process the cut list
 

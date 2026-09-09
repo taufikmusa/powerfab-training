@@ -4,6 +4,8 @@ Part 3 is the fabrication-floor half of the workflow: assigning a route, buildin
 
 Complete [Part 2](../part-2/index.md) before starting. Steps 1 to 13 must all be done — Project Management job, Tekla Structures export, Advance Bill, combining, purchasing, and receiving.
 
+*Screenshots for Steps 14 onward were captured on practice job `TS1000`. The click path is identical — only the job number on screen differs.*
+
 ## Steps in this part
 
 - [Step 14 — Apply the fabrication route](step-14.md)
