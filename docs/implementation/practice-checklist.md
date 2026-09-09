@@ -175,8 +175,10 @@ This is for the **second** run, not the first. Work through [Part 1](part-1/inde
 
 ### Step 16 — Process the cut list
 
-- [ ] **Cut Lists** → select the list → **Details**
-- [ ] Select a line → **Cut** → choose **Heat #** → complete PO # / Location → review **Drop** → **TFS (F4)**
+- [ ] **Cut Lists** → select the list → note **Total** / **Rem** → **Details**
+- [ ] Select a line → **Cut** → choose **Heat #** → complete **PO #** / **B/L #** / **Location**
+- [ ] Set **Drop Loc** — a drop with no location is scrapped on paper → **TFS (F4)**
+- [ ] Confirm **Status** flips *Ready* → *Complete* with a timestamp; repeat until **Rem** is 0
 - [ ] Repeat for every cutting detail until all show **Complete**
 
 ### Step 17 — Production tracking

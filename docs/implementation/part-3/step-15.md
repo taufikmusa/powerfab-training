@@ -58,7 +58,7 @@ A cut list tells the shop exactly how each bar or sheet of received material sho
 
     Tekla PowerFab does not throw an error. It simply leaves those rows out, which looks like a bug if you are not expecting it. This is the payoff for Steps 6, 12, and 13 — anything left unconverted or unreceived quietly fails to appear here.
 
-    Two things do help once you know to look: every row on the report carries a **P.O. #**, so a missing mark is a mark with no purchase order behind it; and the Cut Lists screen has a **Validate** button and a **Warnings** grouping. Neither runs on its own.
+    Two things do help once you know to look: every row on the report carries a **P.O. #**, so a missing mark is a mark with no purchase order behind it; and the Cut Lists screen has a **Validate** button and a **Warnings** grouping. Neither runs on its own, and **Validate** is only enabled when the list's **Val Req** count is non-zero.
 
 !!! warning "Two menus both say Cut List"
     **Dashboards > Cut List Management** launches the PowerFab Go shop-floor dashboard — a different product surface entirely.
